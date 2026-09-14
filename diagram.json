@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "aura jkt",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-ds18b20",
+      "id": "temp1",
+      "top": 46.87,
+      "left": -159.12,
+      "attrs": { "temperature": "14.8" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "temp1:VCC", "esp:3V3", "red", [ "v48", "h105.6", "v-115.2" ] ],
+    [ "temp1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "temp1:DQ", "esp:12", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
