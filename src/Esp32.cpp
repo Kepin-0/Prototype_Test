@@ -4,6 +4,8 @@
 #include <DallasTemperature.h>
 
 #define ONE_WIRE_BUS 12
+#define SDA 22
+#define SCL 21
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
@@ -11,6 +13,7 @@ DallasTemperature sensors(&oneWire);
 LiquidCrystal_I2C lcd(0x27, 20, 4);  // LCD 20x4
 
 void setup() {
+  Wire.begin(SDA, SCL);
 
   Serial.begin(115200);
 
