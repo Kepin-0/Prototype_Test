@@ -2,6 +2,7 @@
 #include <LiquidCrystal_I2C.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
+#include "secrets.h"
 
 #define ONE_WIRE_BUS 12
 
