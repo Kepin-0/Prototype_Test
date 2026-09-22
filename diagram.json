@@ -24,7 +24,6 @@
     [ "esp:TX", "$serialMonitor:RX", "", [] ],
     [ "esp:RX", "$serialMonitor:TX", "", [] ],
     [ "temp1:VCC", "esp:3V3", "red", [ "v38.4", "h124.8", "v-105.6" ] ],
-    [ "temp1:DQ", "esp:12", "green", [ "v0" ] ],
     [ "esp:5V", "lcd1:VCC", "red", [ "v28.8", "h-177.41", "v57.5" ] ],
     [ "esp:GND.3", "lcd1:GND", "black", [ "h14.44", "v153.6", "h-278.4", "v38.4" ] ],
     [ "esp:GND.1", "temp1:GND", "black", [ "h-158.21" ] ],
@@ -37,7 +36,8 @@
       "black",
       [ "v0", "h14.44", "v-38.4", "h-153.6", "v57.6", "h-57.6" ]
     ],
-    [ "esp:34", "pot1:SIG", "cyan", [ "h-91.01" ] ]
+    [ "esp:34", "pot1:SIG", "cyan", [ "h-91.01" ] ],
+    [ "esp:35", "temp1:DQ", "green", [ "h-23.81", "v67.2", "h-124.8" ] ]
   ],
   "dependencies": {}
 }

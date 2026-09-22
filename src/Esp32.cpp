@@ -4,7 +4,7 @@
 #include <DallasTemperature.h>
 #include "secrets.h"
 
-#define ONE_WIRE_BUS 12
+#define ONE_WIRE_BUS 35
 
 //lcd
 #define SDA_PIN 22
